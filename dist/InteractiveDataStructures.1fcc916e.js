@@ -10066,6 +10066,10 @@ exports.default = {
                 });
             }
             this.isSorting = false; // Enable button once sorting is done
+        },
+        // Reshuffle the array manually
+        reshuffleArray () {
+            this.shuffleArray();
         }
     }
 };
@@ -10081,9 +10085,12 @@ const _hoisted_1 = {
 const _hoisted_2 = [
     "disabled"
 ];
+const _hoisted_3 = [
+    "disabled"
+];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", null, [
-        _cache[1] || (_cache[1] = (0, _vue.createElementVNode)("h1", null, "Bogosort Visualizer", -1 /* HOISTED */ )),
+        _cache[2] || (_cache[2] = (0, _vue.createElementVNode)("h1", null, "Bogosort Visualizer", -1 /* HOISTED */ )),
         (0, _vue.createElementVNode)("div", _hoisted_1, [
             ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)($data.array, (height, index)=>{
                 return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", {
@@ -10098,7 +10105,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         (0, _vue.createElementVNode)("button", {
             onClick: _cache[0] || (_cache[0] = (...args)=>$options.startBogosort && $options.startBogosort(...args)),
             disabled: $data.isSorting
-        }, "Start Sorting", 8 /* PROPS */ , _hoisted_2)
+        }, "Start Sorting", 8 /* PROPS */ , _hoisted_2),
+        (0, _vue.createElementVNode)("button", {
+            onClick: _cache[1] || (_cache[1] = (...args)=>$options.reshuffleArray && $options.reshuffleArray(...args)),
+            disabled: $data.isSorting
+        }, "Reshuffle", 8 /* PROPS */ , _hoisted_3)
     ]);
 }
 if (module.hot) module.hot.accept(()=>{

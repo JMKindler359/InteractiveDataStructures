@@ -12,6 +12,21 @@
   transition: height .2s ease-in-out;
 }
 
+button[data-v-e8e72c] {
+  cursor: pointer;
+  color: #fff;
+  background-color: #008cba;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+button[data-v-e8e72c]:hover {
+  background-color: #005f73;
+}
+
 button[data-v-e8e72c]:disabled {
   cursor: not-allowed;
   background-color: gray;
