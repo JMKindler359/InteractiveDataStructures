@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Bogosort Visualizer</h1>
+    <p class="description">
+      Bogosort randomly shuffles the array until it is sorted.
+    </p>
     <div class="array">
       <div
         v-for="(height, index) in array"
