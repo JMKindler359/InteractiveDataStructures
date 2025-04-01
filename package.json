@@ -1,0 +1,30 @@
+{
+  "name": "interactivedatastructures",
+  "version": "1.0.0",
+  "description": "Interactive data structures homework to use a data structure and sorting algorithm with a UI.",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "clean": "rm -rf .parcel-cache dist"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^2.14.4",
+    "parcel": "^2.14.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMKindler359/InteractiveDataStructures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMKindler359/InteractiveDataStructures/issues"
+  },
+  "homepage": "https://github.com/JMKindler359/InteractiveDataStructures#readme"
+}
